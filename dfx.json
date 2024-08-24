@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "countries_backend": {
+      "main": "src/countries_backend/main.mo",
+      "type": "motoko"
+    },
+    "countries_frontend": {
+      "dependencies": [
+        "countries_backend"
+      ],
+      "source": [
+        "src/countries_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "countries_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
